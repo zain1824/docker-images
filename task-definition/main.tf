@@ -167,6 +167,11 @@ resource "aws_ecs_service" "wordpress-app" {
       aws_default_subnet.default_az2.id,
     ]
   }
+  force_new_deployment = true
+
+  triggers = {
+    redeployment = plantimestamp()
+  }
 }
 
 resource "aws_default_subnet" "default_az1" {
