@@ -27,4 +27,4 @@ jobs:
       - name: Render Amazon ECS task definition
         working-directory: task-definition
         run:
-          terraform init && terraform apply -auto-approve
+          terraform init && terraform destory -auto-approve
