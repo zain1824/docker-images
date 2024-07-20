@@ -56,3 +56,4 @@ jobs:
         working-directory: task-definition
         run:
           terraform init && terraform apply -auto-approve
+          

@@ -119,7 +119,7 @@ resource "aws_ecs_task_definition" "application-iaac" {
 [
   {
     "name": "wordpress",
-    "image": "docker.io/wordpress:latest",
+    "image": "docker.io/zain1824/web:latest",
     "cpu": 0,
     "portMappings": [
       {
